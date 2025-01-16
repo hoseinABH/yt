@@ -1,2 +1,3 @@
-# youtube tutorials🧨🐨
+# youtube tutorials 🧨🐨
 
+- nextjs-feature(partial prerendering)
