@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 // Common components
 import { Card } from "@/components/card";
 // Actions
