@@ -1,10 +1,11 @@
+import { Suspense } from "react";
 // Common components
-import { Card } from "@/components/card";
-// Actions
-import { getAllProducts } from "@/actions/product";
+import {
+  DynamicProducts,
+  ProductsFallback,
+} from "./components/dynamic-products";
 
-export default async function Home() {
-  const products = await getAllProducts();
+export default async function Products() {
   return (
     <>
       {/* Static Content */}
@@ -14,9 +15,9 @@ export default async function Home() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Dynamic Content */}
-        {products.map((product) => (
-          <Card key={product.id} product={product} />
-        ))}
+        <Suspense fallback={<ProductsFallback />}>
+          <DynamicProducts />
+        </Suspense>
       </div>
     </>
   );
