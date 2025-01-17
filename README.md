@@ -1,3 +1,3 @@
-# youtube tutorials 🧨🐨
+# NEXT challenge 🧨🐨
 
 - partial prerendering
