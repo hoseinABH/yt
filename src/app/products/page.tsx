@@ -5,6 +5,8 @@ import {
   ProductsFallback,
 } from "./components/dynamic-products";
 
+export const experimental_ppr = true;
+
 export default async function Products() {
   return (
     <>
